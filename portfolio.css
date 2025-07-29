@@ -4,6 +4,11 @@ body {
     background-color: #282a2e;
     color: #333;
     scroll-behavior: smooth;
+    background-image: url('Images/tech.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed; 
 }
 
 header {
@@ -20,12 +25,12 @@ h1:nth-child(1) {
 
 @keyframes neon1 {
     from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 10px #b0f8ff, 0 0 20px #b0f8ff, 0 0 30px #b0f8ff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
-      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    text-shadow: 0 0 5px #0adff3, 0 0 10px #0adff3, 0 0 15px #0adff3, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
 
@@ -74,10 +79,19 @@ h2 {
 }
 
 .project-card {
-    background: white;
+    background: linear-gradient(45deg, #165ba0 25%, #00a2ff 100%);
     padding: 1.5rem;
+    border: 1px solid #07adef;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(2, 235, 243, 0.927);
+}
+
+.project-card h3 {
+    color: #fff;
+}
+
+.project-card p {
+    color: #fff;
 }
 
 #a-propos p {
@@ -97,10 +111,20 @@ button {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background-color: #222;
-    color: white;
-    border: none;
+    color: #0bf4f3;
+    border: 1px solid #0bf4f3;
+    box-shadow:  0 0 5px #0bf4f3,  0 0 5px #0bf4f3 inset;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:before {
+  height: 0%;
+  width: 2px;
+}
+button:hover {
+  color: #fff;
+  box-shadow: inset 0 0 10px #0bf4f3, 0 0 20px #0bf4f3 inset, 0 0 20px #0bf4f3 inset;
 }
 
 label {
