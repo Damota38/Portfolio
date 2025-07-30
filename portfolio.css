@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #282a2e;
-    color: #333;
+    color: #333333;
     scroll-behavior: smooth;
     background-image: url('Images/tech.jpg'); 
     background-size: cover; 
@@ -12,10 +12,42 @@ body {
 }
 
 header {
-    background: #222;
-    color: white;
+    background: #222222;
+    color: #d0faff;
     padding: 1.5rem;
     position: relative;
+    box-shadow: 0 3px 20px rgba(2, 235, 243, 0.719);
+    border-bottom: 1px solid#0bc5f4;
+}
+
+.presentation {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 106%;
+}
+
+.name h2 {
+    margin: 0.5rem;
+}
+
+#nav-menu {
+    margin-top: 30px;
+}
+
+.portrait img {
+    height: 180px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid #00a2ff;
+    box-shadow: 0 0px 10px #00eeff;
 }
 
 h1:nth-child(1) {
@@ -71,6 +103,19 @@ section {
 
 h2 {
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#a-propos {
+    background: #222222b5;
+    border-radius: 40px;
+    margin-top: 80px;
+    box-shadow: 0 0px 10px #00eeff;
+}
+
+#a-propos p {
+    color: rgb(255, 255, 255);
 }
 
 .projects {
@@ -79,12 +124,26 @@ h2 {
 }
 
 .project-card {
-    background: linear-gradient(45deg, #165ba0 25%, #00a2ff 100%);
+    background: linear-gradient(45deg, #165ba0f5 25%, #00a2ff 100%);
     padding: 1.5rem;
     border: 1px solid #07adef;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(2, 235, 243, 0.927);
+    box-shadow: 0 0px 10px rgba(2, 235, 243, 0.927);
+    transition: all 0.2s ease;
+    position: relative;
 }
+
+.project-card:hover {
+            border-color: #00eeff;
+            background: #00a4f6f5;
+            transform: translate(-3px, -3px);
+            box-shadow: 0 0px 20px rgb(2, 235, 243);
+        }
+
+        .project-card:active {
+            transform: translate(0, 0);
+            box-shadow: 0 0px 10px rgba(2, 235, 243, 0.927);
+        }
 
 .project-card h3 {
     color: #fff;
@@ -94,8 +153,9 @@ h2 {
     color: #fff;
 }
 
-#a-propos p {
-    color: rgb(255, 255, 255);
+.project-card a {
+    color: #b8f0ff;
+    font-weight: bold;
 }
 
 input,
@@ -132,10 +192,12 @@ label {
 }
 
 footer {
-    background: #222;
-    color: white;
+    background: #222222;
+    color: #dcfbff;
     text-align: center;
     padding: 2rem 1rem;
+    box-shadow: 0 1px 20px rgba(2, 235, 243, 0.719);
+    border-top: 1px solid#0bc5f4;
 }
 
 @media (max-width: 768px) {
