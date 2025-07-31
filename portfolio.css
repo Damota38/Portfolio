@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -96,7 +100,7 @@ nav a {
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem;
     max-width: 1000px;
     margin: auto;
 }
@@ -116,6 +120,26 @@ h2 {
 
 #a-propos p {
     color: rgb(255, 255, 255);
+}
+
+#a-propos button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #222;
+    color: #0bf4f3;
+    border: 1px solid #0bf4f3;
+    box-shadow:  0 0 5px #0bf4f3,  0 0 5px #0bf4f3 inset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#a-propos button:before {
+  height: 0%;
+  width: 2px;
+}
+#a-propos button:hover {
+  color: #fff;
+  box-shadow: inset 0 0 10px #0bf4f3, 0 0 20px #0bf4f3 inset, 0 0 20px #0bf4f3 inset;
 }
 
 .projects {
@@ -167,7 +191,7 @@ textarea {
     border: 1px solid #ccc;
 }
 
-button {
+#contact button {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background-color: #222;
@@ -178,17 +202,36 @@ button {
     cursor: pointer;
 }
 
-button:before {
+#contact button:before {
   height: 0%;
   width: 2px;
 }
-button:hover {
+#contact button:hover {
   color: #fff;
   box-shadow: inset 0 0 10px #0bf4f3, 0 0 20px #0bf4f3 inset, 0 0 20px #0bf4f3 inset;
 }
 
-label {
+#contact-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-content {
+    border: 2px solid #00eeff;
+    width: 60%;
+    height: 100%;
+    padding: 3.5rem 8rem;
+    font-weight: bold;
+    box-shadow: 0 0px 10px rgba(2, 235, 243, 0.927);
+    border-radius: 8px;
+    background: #222222b5;
+}
+
+.form-label {
     color: #ffffff;
+    width: 550px;
+    margin-left: 10px;
 }
 
 footer {
