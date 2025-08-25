@@ -114,13 +114,14 @@ h2 {
 #a-propos {
     background: #222222b5;
     border: 1px solid #00eeff;
-    border-radius: 40px;
+    border-radius: 13px;
     margin-top: 80px;
     box-shadow: 0 0px 10px #00eeff;
 }
 
 #a-propos p {
     color: rgb(255, 255, 255);
+
 }
 
 #a-propos button {
@@ -152,7 +153,7 @@ h2 {
     background: linear-gradient(45deg, #165ba0f5 25%, #00a2ff 100%);
     padding: 1.5rem;
     border: 1px solid #07adef;
-    border-radius: 8px;
+    border-radius: 13px;
     box-shadow: 0 0px 10px rgba(2, 235, 243, 0.927);
     transition: all 0.2s ease;
     position: relative;
