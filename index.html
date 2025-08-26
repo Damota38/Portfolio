@@ -12,57 +12,57 @@
 
   <header>
     <div class="presentation">
-      <div class="name">
-        <h1>André Da Mota</h1>
-        <h2>Bienvenue sur mon portfolio ! Je suis développeur Web</h2>
-        <div class="burger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="header-top">
+        <div class="name">
+          <h1>André Da Mota</h1>
+          <h2>Bienvenue sur mon portfolio ! Je suis développeur Web</h2>
         </div>
-        <nav id="nav-menu">
-          <a href="#a-propos">À propos</a>
-          <a href="#projets">Projets</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        
+        <div class="portrait">
+          <img src="/Images/portrait_8-bits.jpeg">
+        </div>
       </div>
-
-      <div class="portrait">
-        <img src="/Images/portrait_8-bits.jpeg">
+      
+      <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
+      
+      <nav id="nav-menu">
+        <a href="#a-propos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
   <section id="a-propos">
     <h2>À propos</h2>
-    <p>Je m’appelle André Da Mota, étudiant en Développement Web et Web Mobile à Nepsod. Actuellement en formation, je
-      me spécialise aussi bien en front-end (HTML, CSS, JavaScript, React.js…) qu’en back-end (Node.js, PHP,
+    <p>Je m'appelle André Da Mota, étudiant en Développement Web et Web Mobile à Nepsod. Actuellement en formation, je
+      me spécialise en front-end (HTML, CSS, JavaScript, React.js…) et back-end (Node.js, PHP,
       MySQL, NoSQL).</p>
       
-    <p>Mon parcours est marqué par la curiosité et l’adaptabilité : après un bac pro Systèmes Numériques et une licence
-      en Arts du Spectacle, j’ai choisi de me tourner vers le développement web, un domaine qui me permet de mêler
+    <p>Mon parcours est marqué par la curiosité et l'adaptabilité : après un bac pro Systèmes Numériques et une licence
+      en Arts du Spectacle, j'ai choisi de me tourner vers le développement web, un domaine qui me permet de mêler
       créativité, logique et innovation technologique.</p>
-      
-    <p>Polyvalent et motivé, j’aime travailler en équipe et relever de nouveaux défis. Je m’intéresse particulièrement
-      aux enjeux d’accessibilité (RGAA) et d’éco-conception, car je suis convaincu que le web doit être pensé pour tous
-      et de manière responsable.</p>
 
-    <p>En dehors du code, je nourris ma créativité à travers le cinéma, la photographie et les voyages. Ces centres
-      d’intérêt enrichissent ma vision du développement et m’inspirent dans la création de solutions numériques
+    <p>En dehors du code, je nourris ma créativité à travers le cinéma, la photographie et les jeux vidéo. Ces centres
+      d'intérêt enrichissent ma vision du développement et m'inspirent dans la création de solutions numériques
       efficaces et esthétiques.</p>
 
-    <p>Aujourd’hui, je suis à la recherche d’un stage de 2 mois à partir du 23 octobre 2025, afin de mettre en pratique
+    <p>Aujourd'hui, je suis à la recherche d'un stage de 2 mois à partir du 23 octobre 2025, afin de mettre en pratique
       mes compétences, continuer à apprendre et contribuer à des projets concrets.
     </p>
-    <a href="documents/CV DA MOTA DWWM.pdf" download class="btn-cv"><button>Télécharger CV</button></a>
+    <a href="#" class="btn-cv"><button>Télécharger CV</button></a>
   </section>
 
   <section id="projets">
     <h2>Mes Projets</h2>
     <div class="projects">
       <div class="project-card">
-        <h3>Arcadia - site de jeux</h3>
-        <p>Un site avec un style retro qui regroupe tout les projets jeux que j'ai pu faire.</p>
+        <h3>Arcadia - site de jeux simple</h3>
+        <p>Un site de jeux de simple avec un style retro qui regroupe tout les projets jeux que j'ai pu faire.</p>
         <a href="https://arcadia-applidejeux.netlify.app/">Voir le projet</a>
       </div>
       <div class="project-card">
@@ -71,16 +71,14 @@
         <a href="https://lecoincomics.netlify.app/">Voir le projet</a>
       </div>
       <div class="project-card">
-        <h3>???</h3>
-        <p>???????</p>
-        <a href="#">Voir le projet</a>
+        <h3>Projet à venir</h3>
+        <p>Un nouveau projet passionnant en cours de développement. Restez connecté pour découvrir mes prochaines créations !</p>
+        <a href="#">Bientôt disponible</a>
       </div>
-    </div>
     </div>
   </section>
 
   <section id="contact">
-
     <div class="contact-title">
       <h2>Contactez-moi</h2>
     </div>
@@ -88,9 +86,9 @@
     <div class="contact-container">
       <div class="contact_details">
         <h2>Mes coordonnées :</h2>
-        <p>Grenoble, Saint-Martin-d'Hères 38400</p>
-        <p>Mon email : <a href="mailto:ton@mail.com">a.damota.dw@gmail.com</a></p>
-        <p>Mon numéro de téléphone : 07 82 50 99 62</p>
+        <p>📍 Grenoble, Saint-Martin-d'Hères 38400</p>
+        <p>✉️ Mon email : <a href="mailto:a.damota.dw@gmail.com">a.damota.dw@gmail.com</a></p>
+        <p>📞 Mon numéro de téléphone : 07 82 50 99 62</p>
       </div>
 
       <form id="contact-form">
@@ -107,8 +105,7 @@
             </label>
             <button type="submit">Envoyer</button>
           </div>
-          <p id="form-message" style="color: rgba(2, 235, 243, 0.927); display: none; margin-top: 1rem;">Message envoyé
-            !</p>
+          <p id="form-message">Message envoyé !</p>
         </div>
       </form>
     </div>
